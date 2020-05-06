@@ -1,0 +1,29 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+    color: #ffffff;
+    background-size: cover;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(18, 18, 94, 1) 47%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  .textLogo {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: STHupo;
+    text-align: center;
+    line-height: auto;
+    margin-top: 5%;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 23%;
+    max-width: 320px;
+  }
+}
