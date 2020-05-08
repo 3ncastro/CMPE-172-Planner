@@ -1,9 +1,19 @@
 import React from "react";
 import moment from "moment";
 import "./calendar.css";
+import "../popup/Event.css";
+import { Container } from "../popup/Container";
+import { NavLink, Link, useHistory } from "react-router-dom";
+import {
+  Button,
+  ButtonToolbar,
+  FormGroup,
+  FormControl,
+  ControlLabel,
+} from "react-bootstrap";
+
 export default class Calendar extends React.Component {
   weekdayshort = moment.weekdaysShort();
-
   state = {
     showCalendarTable: true,
     showMonthTable: false,
@@ -11,6 +21,7 @@ export default class Calendar extends React.Component {
     allmonths: moment.months(),
     showYearNav: false,
     selectedDay: null,
+    addModalShow: false,
   };
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
@@ -202,6 +213,13 @@ export default class Calendar extends React.Component {
       }
     );
   };
+  onSubmit = (event) => {
+    event.preventDefault(event);
+    console.log(event.target.name.value);
+    console.log(event.target.time.value);
+    console.log(event.target.location.value);
+    console.log(event.target.description.value);
+  };
 
   render() {
     let weekdayshortname = this.weekdayshort.map((day) => {
@@ -222,7 +240,10 @@ export default class Calendar extends React.Component {
               this.onDayClick(e, d);
             }}
           >
-            {d}
+            <div className="notApp">
+              <Container triggerText={d} onSubmit={this.onSubmit} />
+            </div>
+            {/* {d} */}
           </span>
         </td>
       );
