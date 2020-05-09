@@ -3,14 +3,11 @@ import moment from "moment";
 import "./calendar.css";
 import "../popup/Event.css";
 import { Container } from "../popup/Container";
+import "../filledpopup/FilledEvents.css";
+
+import { FilledContainer } from "../filledpopup/FilledContainer";
 import { NavLink, Link, useHistory } from "react-router-dom";
-import {
-  Button,
-  ButtonToolbar,
-  FormGroup,
-  FormControl,
-  ControlLabel,
-} from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 
 export default class Calendar extends React.Component {
   weekdayshort = moment.weekdaysShort();
@@ -22,6 +19,9 @@ export default class Calendar extends React.Component {
     showYearNav: false,
     selectedDay: null,
     addModalShow: false,
+    rows: [],
+    wholeDate: "",
+    eventAll: "",
   };
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
@@ -199,26 +199,50 @@ export default class Calendar extends React.Component {
       </table>
     );
   };
-  // Edit this
-  //
-  //
 
   onDayClick = (e, d) => {
-    this.setState(
-      {
-        selectedDay: d,
-      },
-      () => {
-        console.log("SELECTED DAY: ", this.state.selectedDay);
-      }
-    );
+    this.setState({
+      selectedDay: d,
+      wholeDate:
+        this.state.selectedDay + " " + this.month() + " " + this.year(),
+    });
   };
+
   onSubmit = (event) => {
     event.preventDefault(event);
-    console.log(event.target.name.value);
-    console.log(event.target.time.value);
-    console.log(event.target.location.value);
-    console.log(event.target.description.value);
+    let eventName = event.target.name.value;
+    let eventTime = event.target.time.value;
+    let eventLocation = event.target.location.value;
+    let eventDescription = event.target.description.value;
+    let eventDate = this.state.wholeDate;
+    // let eventAll =
+    //   eventDate +
+    //   " " +
+    //   eventName +
+    //   " " +
+    //   eventTime +
+    //   " " +
+    //   eventLocation +
+    //   " " +
+    //   eventDescription;
+
+    console.log(eventDate);
+    console.log(eventName);
+    console.log(eventTime);
+    console.log(eventLocation);
+    console.log(eventDescription);
+    this.setState({
+      eventAll:
+        eventDate +
+        " " +
+        eventName +
+        " " +
+        eventTime +
+        " " +
+        eventLocation +
+        " " +
+        eventDescription,
+    });
   };
 
   render() {
@@ -240,7 +264,7 @@ export default class Calendar extends React.Component {
               this.onDayClick(e, d);
             }}
           >
-            <div className="notApp">
+            <div>
               <Container triggerText={d} onSubmit={this.onSubmit} />
             </div>
             {/* {d} */}
