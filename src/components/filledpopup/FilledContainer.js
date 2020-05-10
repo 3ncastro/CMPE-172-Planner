@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { FilledModal } from "./FilledModal";
 import FilledTriggerButton from "./FilledTriggerButton";
 
-export class FilledContainer extends Component {
+export class FilledContainer extends React.Component {
   state = { isShown: false };
   showModal = () => {
     this.setState({ isShown: true }, () => {

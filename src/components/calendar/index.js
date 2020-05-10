@@ -225,7 +225,6 @@ export default class Calendar extends React.Component {
     //   eventLocation +
     //   " " +
     //   eventDescription;
-
     console.log(eventDate);
     console.log(eventName);
     console.log(eventTime);
@@ -339,6 +338,12 @@ export default class Calendar extends React.Component {
             </table>
           </div>
         )}
+        <div>
+          <FilledContainer
+            triggerText={"See Events"}
+            onSubmit={this.onSubmit}
+          />
+        </div>
       </div>
     );
   }
