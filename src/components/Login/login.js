@@ -1,3 +1,6 @@
+
+
+
 import React, { useState, Fragment } from "react";
 import { NavLink, Link, useHistory } from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
@@ -14,12 +17,14 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    const{controlId, value} = event.target;
+    
     history.push("/calendar");
   }
 
   return (
     <div className="Login">
-      <h1 className="textLogo">LOGIN</h1>
+      <h1 className="textLogo">SIGN UP!</h1>
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
           <ControlLabel>Email</ControlLabel>

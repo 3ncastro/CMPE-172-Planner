@@ -14,6 +14,9 @@ export default function ShowEvents() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    const {controlId, value} = event.target;
+    this.setState({[controlId]:value});
+    console.log(this.state);
     history.push("/calendar");
   }
 

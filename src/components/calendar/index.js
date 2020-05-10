@@ -9,7 +9,10 @@ import { FilledContainer } from "../filledpopup/FilledContainer";
 import { NavLink, Link, useHistory } from "react-router-dom";
 import { Button, Modal } from "react-bootstrap";
 
+
 export default class Calendar extends React.Component {
+
+  
   weekdayshort = moment.weekdaysShort();
   state = {
     showCalendarTable: true,
@@ -21,8 +24,14 @@ export default class Calendar extends React.Component {
     addModalShow: false,
     rows: [],
     wholeDate: "",
+    eventDate: "",
+    eventName: "",
+    eventTime: "",
+    eventLocation: "",
+    eventDescription: "",
     eventAll: "",
   };
+
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
   };
@@ -204,12 +213,12 @@ export default class Calendar extends React.Component {
     this.setState({
       selectedDay: d,
       wholeDate:
-        this.state.selectedDay + " " + this.month() + " " + this.year(),
+      this.state.selectedDay + " " + this.month() + " " + this.year(),
     });
   };
 
   onSubmit = (event) => {
-    event.preventDefault(event);
+    event.preventDefault();
     let eventName = event.target.name.value;
     let eventTime = event.target.time.value;
     let eventLocation = event.target.location.value;
@@ -230,18 +239,24 @@ export default class Calendar extends React.Component {
     console.log(eventTime);
     console.log(eventLocation);
     console.log(eventDescription);
-    this.setState({
-      eventAll:
-        eventDate +
-        " " +
-        eventName +
-        " " +
-        eventTime +
-        " " +
-        eventLocation +
-        " " +
-        eventDescription,
-    });
+    const {id, value} = event.target;
+    this.setState({[id]: value});
+    console.log(this.state);
+  
+    // this.setState({
+    //   eventAll:
+    //     eventDate +
+    //     " " +
+    //     eventName +
+    //     " " +
+    //     eventTime +
+    //     " " +
+    //     eventLocation +
+    //     " " +
+    //     eventDescription,
+    // });
+
+    
   };
 
   render() {
