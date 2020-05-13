@@ -1,18 +1,14 @@
 # Monthly Planner
-## San Jose State University<br />
-## CMPE 172/ Spring 2020<br />
-## Team-Nicholas Castro and Justin Magadia<br />
-## Project Introduction<br />
-This is a simple monthly planner applcation that lets users create events<br />
-and see the events that they made. This application would ask a user to login <br />
-before being able to access the calendar.
-<br />
-This project aims to provide a simple way for users to keep track of events<br />
-that they planned. Tools used for this application are MySQL, Amazon RDS, <br />
-Nodejs, and React. Tools that would have been implemented but were not due <br />
-to difficulties and time constraints are Elastic Beanstalk using Docker to <br />
-deploy the project as well as Springboot as a resting API. <br />
-## Sample Demo Screenshots<br />
+## San Jose State University
+## CMPE 172/ Spring 2020
+## Team-Nicholas Castro and Justin Magadia
+## Project Introduction
+##### Current Application
+Currently the app isnt fully done and at the place we hoped it would be. When you first enter the app you will see a login page, this is a placeholder page for if we had time to implement a login for the app. Any email and password will allow the user to login and see the calendar page. The user would be able to select any month either by clicking the arrows on the top right and top left of the initial calendar screen, or by clicking on the current month in the top left corner to bring up the select month feature. To change the year the user can either scroll through all the months using the arrows on the top left and top right until the end of the year is reached and the next one pops up, or by clicking on the current month and then using the arrows on that screen to change the year directly. Once both the desired year and month are selected the user can select which day they would like to add an event to by clicking on the number for that day. This brings up the add event form which can then be filled out and submitted. Currently the submit button only goes to local storage. After submitting the user can scroll to the bottom of the calendar and click the "see events" button this will bring up a form that is currently filled with hardcoded values but shows how the events would be displayed. 
+##### Intended Application
+We intednd for the app to have a login page to remeber each users info and keep it private. After a simple login the user would be able to select any month, year and day the same way as in the current application. Once the day is selected and the form is submitted this info would go to an RDS database where the values are stored under that users info. Once stored the user can see all saved events by clicking the "see events" button at the bottomo of the calendar. This will get the values from the database and display them in a form on screen much like the values in the current application. 
+
+## Sample Demo Screenshots
 ##### Login Page
 ![](images/LoginPage.PNG)
 ##### Calendar Page
@@ -35,12 +31,4 @@ This will allow you to view our app in (http://localhost:3000) and view it in th
 ## Class and Sequence Diagrams
 <img src="images/classDiagram.JPG"> </div>
 <img src="images/sequenceDiagram.JPG"> </div>
-
-
-## Mid tier APIs 
-The Mid tier APIs that would have been used was the 
-
-## UI data transports
-The server file would act as the 
-
 
