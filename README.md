@@ -3,7 +3,10 @@
 ## Team-Nicholas Castro and Justin Magadia
 ## Sample Demo Screenshots
 ![](images/LoginPage.PNG)
-
+![](images/Calendar%20Page.PNG)
+![](images/Select%20Month.PNG)
+![](images/Add%20Event.PNG)
+![](images/See%20Events.PNG)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
