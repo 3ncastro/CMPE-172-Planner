@@ -44,7 +44,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Class and Sequence Diagrams
 <img src="images/classDiagram.jpg"> </div>
-<img src="images/sequenceDiagram.jpg> </div>
+<img src="images/sequenceDiagram.jpg"> </div>
 
 ## Learn More
 
