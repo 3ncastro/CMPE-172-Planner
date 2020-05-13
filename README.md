@@ -2,6 +2,16 @@
 ## San Jose State University<br />
 ## CMPE 172/ Spring 2020<br />
 ## Team-Nicholas Castro and Justin Magadia<br />
+## Project Introduction<br />
+This is a simple monthly planner applcation that lets users create events<br />
+and see the events that they made. This application would ask a user to login <br />
+before being able to access the calendar.
+<br />
+This project aims to provide a simple way for users to keep track of events<br />
+that they planned. Tools used for this application are MySQL, Amazon RDS, <br />
+Nodejs, and React. Tools that would have been implemented but were not due <br />
+to difficulties and time constraints are Elastic Beanstalk using Docker to <br />
+deploy the project as well as Springboot as a resting API. <br />
 ## Sample Demo Screenshots<br />
 ##### Login Page
 ![](images/LoginPage.PNG)
