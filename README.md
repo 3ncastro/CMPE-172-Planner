@@ -1,3 +1,8 @@
+San Jose State University
+CMPE 172/ Spring 2020
+Team-Nicholas Castro and Justin Magadia
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
