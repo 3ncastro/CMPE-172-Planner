@@ -21,11 +21,16 @@ We intended for the app to have a login page to remeber each users info and keep
 ![](images/See%20Events.PNG)
 
 ## Setup Pre-requisites
-This project only runs locally so these are the pre-requisites to do so.<br />
 You will need to have NodeJS installed on the system.<br />
-Once this is done locate the directory in which the project is stored.<br />
+This project was run locally using command propt on a windows machine so use whatever terminal is on your system.<br />
+Download the project to a locatable directory.<br />
+
+## How to Run the Monthly Calendar
+Locate the directory in which the project is stored.<br />
 From within this directory run command prompt and type the command "npm start".<br />
 This will allow you to view our app in (http://localhost:3000) and view it in the browser.<br />
+To login to the app simply use any email and password and click login. There is no admin credentials to use the app.<br />
+
 
 
 ## Class and Sequence Diagrams
