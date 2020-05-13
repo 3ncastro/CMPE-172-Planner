@@ -36,3 +36,11 @@ This will allow you to view our app in (http://localhost:3000) and view it in th
 <img src="images/classDiagram.JPG"> </div>
 <img src="images/sequenceDiagram.JPG"> </div>
 
+
+## Mid tier APIs 
+The Mid tier APIs that would have been used was the 
+
+## UI data transports
+The server file would act as the 
+
+
