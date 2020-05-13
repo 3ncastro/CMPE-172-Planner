@@ -1,17 +1,17 @@
-## Monthly Planner
-San Jose State University<br />
-CMPE 172/ Spring 2020<br />
-Team-Nicholas Castro and Justin Magadia<br />
-Sample Demo Screenshots<br />
-Login Page
+# Monthly Planner
+## San Jose State University<br />
+## CMPE 172/ Spring 2020<br />
+## Team-Nicholas Castro and Justin Magadia<br />
+## Sample Demo Screenshots<br />
+##### Login Page
 ![](images/LoginPage.PNG)
-Calendar Page
+##### Calendar Page
 ![](images/Calendar%20Page.PNG)
-Select Month
+##### Select Month
 ![](images/Select%20Month.PNG)
-Add Event
+##### Add Event
 ![](images/Add%20Event.PNG)
-See Events
+##### See Events
 ![](images/See%20Events.PNG)
 
 ## Setup Pre-requisites
