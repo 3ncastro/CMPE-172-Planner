@@ -17,8 +17,8 @@
 ## Setup Pre-requisites
 This project only runs locally so these are the pre-requisites to do so.<br />
 You will need to have NodeJS installed on the system.<br />
-Once this is done locate the directory in which the project is store.<br />
-Form within this directory run command prompt and type the command npm start.<br />
+Once this is done locate the directory in which the project is stored.<br />
+From within this directory run command prompt and type the command "npm start".<br />
 This will allow you to view our app in (http://localhost:3000) and view it in the browser.<br />
 
 
