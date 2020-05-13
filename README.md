@@ -1,7 +1,8 @@
-## San Jose State University
-## CMPE 172/ Spring 2020
-## Team-Nicholas Castro and Justin Magadia
-## Sample Demo Screenshots
+## Monthly Planner
+San Jose State University<br />
+CMPE 172/ Spring 2020<br />
+Team-Nicholas Castro and Justin Magadia<br />
+Sample Demo Screenshots<br />
 Login Page
 ![](images/LoginPage.PNG)
 Calendar Page
@@ -12,19 +13,14 @@ Add Event
 ![](images/Add%20Event.PNG)
 See Events
 ![](images/See%20Events.PNG)
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Setup Pre-requisites
+This project only runs locally so these are the pre-requisites to do so.<br />
+You will need to have NodeJS installed on the system.<br />
+Once this is done locate the directory in which the project is store.<br />
+Form within this directory run command prompt and type the command npm start.<br />
+This will allow you to view our app in (http://localhost:3000) and view it in the browser.<br />
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ## Class and Sequence Diagrams
 <img src="images/classDiagram.JPG"> </div>
